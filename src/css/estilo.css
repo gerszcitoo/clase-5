@@ -1,4 +1,4 @@
-/* ------------FONDO------------ */
+/* ========== ESTILO GENERAL ======== */
 
 * {
     margin: 0;
@@ -10,7 +10,11 @@ body {
     background-color: gray;
     /* letra */
     font-family: 'Roboto Condensed', sans-serif;
+    height: 2000px;
 }
+
+
+/* ======= NAVBAR ====== */
 
 .navbar {
     background-color: black;
@@ -18,7 +22,6 @@ body {
 }
 
 .navbar ul {
-    /* --------modificación altura de navbar----- */
     /* propiedades flex de navbar */
     display: flex;
     flex-direction: row;
@@ -32,42 +35,59 @@ body {
 }
 
 
-/* ========Jerarquías===== */
+/* ======= POSITION ========= */
 
+.contenedor {
+    background-color: #d3b281;
+    height: 20vh;
+    font-size: 2rem;
+    padding: 10px;
+    position: relative;
+}
 
-/* ---------DIV CUADRADO------- */
-
-
-/* div {
-    background-color: yellow;
-    width: 50px;
-    height: 50px
-} */
-
-
-/* ------CLASE CUADRADO------ */
-
-.cuadrado {
-    margin: 10px;
-    background-color: blue;
-    width: 50px;
-    height: 50px;
-    border-radius: 5%;
+.contenedor h1 {
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 
-/* ------ID CUADRADO------ */
+/* items con posicion */
 
-
-/* #figura{
-    background-color: red;
-}   */
-
-.titulo {
-    margin: 20px 10px;
+.item-1 {
+    background-color: #dc143c;
+    position: relative;
+    top: 15px;
+    right: 5px;
 }
 
-.parrafo {
-    margin: 10px;
-    /* margin-left: 40% */
+.item-2 {
+    background-color: #dc6e14;
+    position: absolute;
+    top: 1px;
+}
+
+.item-3 {
+    background-color: #1467dc;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+.item-4 {
+    background-color: #159103;
+    position: sticky;
+    top: 0;
+}
+
+
+/* ====== SECCION PASOS GITHUB ======== */
+
+.seccion-pasos {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.seccion-pasos ol p {
+    font-size: 1rem;
 }
